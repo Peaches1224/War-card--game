@@ -1,22 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>War Caed Game</title>
-</head>
-<body>
-   
-    
-</body>
-</html>
-
 <html>
-
-<head>
-    <script src="scripts.js"></script>
-</head>
-
+    <head>
+        <script src="index.js"></script>
+    </head>
 </html>
-       
+
+<article class="wrapper">
+  <header>
+    <h1>A Game of War</h1>
+    <div class="rules hidden">Rules: War uses a standard 52-card deck. Shuffle the cards sufficiently before playing, especially if the deck is brand new. Either player can be the dealer or a third person. Deal cards back and forth so that each player has 26 cards. Do not look at your cards.
+
+To play, count down from 3 and flip cards at the same time so that they are face up. Only flip the top card, no peaking! Other cards must remain secret. The player with the higher card wins and collects both cards, returning the cards to the bottom of their personal deck. If players flip the same card, the war begins.</div>
+  </header>
+  <section class="cpu">
+    <h2>CPU</h2>
+    <div class="info left">
+      <div data-points="0">Points:</div>
+      <div data-cards-left="26">Cards Left:</div>
+      <div data-games-won="0">Games Won:</div>
+    </div>
+    <div class="card right">
+      <span class="name"></span>
+    </div>
+  </section>
+  <section class="player">
+    <h2>You</h2>
+    <div class="info right">
+      <div data-points="0">Points:</div>
+      <div data-cards-left="26">Cards Left:</div>
+      <div data-games-won="0">Games Won:</div>
+    </div>
+    <div class="card left">
+      <span class="name"></span>
+    </div>
+  </section>
+  <footer>
+    <button class="draw">Draw!</button>
+  </footer>
+</article>
